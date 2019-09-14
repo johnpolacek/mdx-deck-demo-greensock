@@ -1,0 +1,260 @@
+import {
+  Head, Image, Notes, Appear,
+  Invert, Split, SplitRight, FullScreenCode, Horizontal
+} from 'mdx-deck'
+import { Bounce, Elastic, FadeIn, FadeInList, FloatUpList, Rotate, Rotate3D, Scale, SlideLeft, SlideRight, SlideUp, SlideDown, SlideRandom, Spin, TossUp, Twirl } from './animation'
+import Counter from './Counter'
+import { future } from '@mdx-deck/themes'
+
+export const themes = [ future ]
+
+<Head>
+  <title>mdx-deck-greensock</title>
+  <meta name='twitter:card' content='summary_large_image' />
+  <meta name='twitter:site' content='@jxnblk' />
+  <meta name='twitter:title' content='mdx-deck' />
+  <meta name='twitter:description' content='MDX-based presentation deck demo with greensock' />
+  <meta name='twitter:image' content='https://jxnblk.com/mdx-deck/card.png' />
+</Head>
+
+<Scale delay={.5} duration={.5}>
+
+# MDX Deck
+
+</Scale>
+
+<Bounce y={50} delay={2.5} duration={.5}>
+
+<div style="font-size:.66em;margin-top:-2em;color:#61AC27;">( with <a style="color:#61AC27;" href="https://greensock.com">GSAP</a> )</div>
+
+</Bounce>
+
+<FadeIn delay={1.5} duration={1}>
+
+MDX-based presentation decks
+
+</FadeIn>
+
+---
+
+<Scale scale={20}>
+
+# Presentation decks
+
+</Scale>
+
+---
+
+<SlideLeft>
+
+# Built with [MDX][]
+[MDX]: https://github.com/mdx-js/mdx
+
+</SlideLeft>
+
+---
+
+<SlideDown>
+
+### Import and Use React Components
+
+</SlideDown>
+
+<SlideUp delay={.25}>
+
+<Counter />
+
+</SlideUp>
+
+---
+
+<FloatUpList>
+
+- Make bulleted lists
+- To help make your point
+- And have them all float in
+- Sequentially from the bottom
+- With a bit of randomness
+
+</FloatUpList>
+
+---
+
+<SlideRight>
+
+## Getting Started
+
+</SlideRight>
+
+<FadeInList delay={.5}>
+
+1. `npm i -D mdx-deck`
+2. Write some markdown and JSX
+3. Present
+
+</FadeInList>
+
+---
+
+<Spin>
+
+```jsx
+<button>code example</button>
+```
+
+</Spin>
+
+<Notes>
+
+- These are speaker notes
+- And they won't be rendered in your slide
+
+</Notes>
+
+---
+
+<FadeIn>
+
+```jsx
+class extends React.Component {
+  render () {
+    return (
+      <React.Fragment>
+        <h1>Indented code</h1>
+      </React.Fragment>
+    )
+  }
+}
+```
+
+</FadeIn>
+
+---
+
+<Rotate3D>
+
+> “Blockquotes are essential to any good presentation”
+
+</Rotate3D>
+
+<Rotate3D delay={.5}>
+
+– Anonymous
+
+</Rotate3D>
+
+<Notes>
+  <ul>
+    <li>Speaker notes can also be</li>
+    <li>Written in JSX</li>
+  </ul>
+</Notes>
+
+---
+
+<Elastic>
+
+### Appears
+
+</Elastic>
+
+<ul>
+  <Appear>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </Appear>
+</ul>
+
+---
+
+<Image
+  src='https://source.unsplash.com/random/768x2048?new_york'
+  size='contain'
+/>
+
+<Notes>
+Testing object fit
+</Notes>
+
+---
+
+<Image src='https://images.unsplash.com/photo-1462331940025-496dfbfc7564?new_york&w=2048&q=20' />
+
+---
+
+<Split>
+
+![](https://images.unsplash.com/photo-1462331940025-496dfbfc7564?new_york&w=2048&q=20)
+
+<FadeIn duration={4}>
+
+## Split Layout
+
+</FadeIn>
+
+</Split>
+
+---
+
+<SplitRight>
+
+![](https://images.unsplash.com/photo-1462331940025-496dfbfc7564?new_york&w=2048&q=20)
+
+<SlideRight>
+
+## Split Layout
+
+(To the right)
+
+</SlideRight>
+
+</SplitRight>
+
+---
+
+<Horizontal>
+
+![](https://source.unsplash.com/random/1024x768')
+
+![](https://source.unsplash.com/random/1024x768')
+
+<SlideLeft>
+
+### Horizontal Layout
+
+</SlideLeft>
+
+</Horizontal>
+
+---
+
+<Invert>
+
+<Twirl>
+
+# Invert Layout
+
+</Twirl>
+
+</Invert>
+
+---
+
+<Invert>
+
+<TossUp>
+
+# Get started :sunglasses:
+
+</TossUp>
+
+<TossUp delay={.5}>
+
+[GitHub](https://github.com/jxnblk/mdx-deck)
+
+</TossUp>
+
+</Invert>
+

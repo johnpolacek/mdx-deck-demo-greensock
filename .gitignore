@@ -1,0 +1,8 @@
+dist
+public
+coverage
+node_modules
+package-lock.json
+public
+.cache
+cypress/videos
