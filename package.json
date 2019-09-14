@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "mdx-deck demo.mdx",
-    "build": "mdx-deck build demo.mdx"
+    "build": "rm -rf .cache && mdx-deck build demo.mdx"
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
