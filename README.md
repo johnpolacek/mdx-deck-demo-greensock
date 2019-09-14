@@ -85,4 +85,10 @@ Note: To get animations to play properly, you must include linebreaks above and 
 ~~~~
 
 
+## Known Issues
+
+- Trying to figure out how to add animations to the `<Appear/>` MDX Deck component
+- On a deployed build, on the first navigation through slides the animation will beging to play, then restart (added delay to start of animations as a temp hack).
+
+
 

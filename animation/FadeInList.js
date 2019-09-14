@@ -12,7 +12,7 @@ export default props => {
     	{	
         React.Children.map(props.children, (child, i) => {
           return React.Children.map(child.props.children, (child, i) => {
-            const [tweenRefChild] = useTweenLite(1, {startAt:{opacity:0, y: '5vh'}, delay: (.5 * i) + fadeInDelay, ease: Expo.easeOut, opacity:1, y:0 })
+            const [tweenRefChild] = useTweenLite(1, {startAt:{opacity:0, y: '5vh'}, delay: (1 * i) + fadeInDelay, ease: Expo.easeOut, opacity:1, y:0 })
             return <li style={{opacity:0}} {...props} ref={tweenRefChild}>{child.props.children}</li>
           })
         })
