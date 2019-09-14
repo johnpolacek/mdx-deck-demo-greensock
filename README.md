@@ -1,5 +1,7 @@
 # MDX	Deck with Greensock
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/41536d1d-d206-4630-ba26-142cbbec37e9/deploy-status)](https://app.netlify.com/sites/mdx-deck-greensock-demo/deploys)
+
 Combining my favorite new React presentation deck awesome sauce ([MDX Deck](https://github.com/jxnblk/mdx-deck)) with my favorite old do-anything-you-can-imagine animation platform ([Greensock](https://greensock.com)).
 
 This is a demo that takes the [MDX Deck Demo](https://github.com/jxnblk/mdx-deck/blob/master/docs/demo.mdx) by [Prolific AF Jxnblk](https://jxnblk.com/), a [hook](https://github.com/johnlindquist/use-gsap) that the great [John Lindquist](https://johnlindquist.com/) put together in probably 2 seconds and some ideas from my old [TweenDeck lib](https://johnpolacek.github.io/tweendeck/).
