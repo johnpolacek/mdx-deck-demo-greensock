@@ -1,4 +1,4 @@
-# MDX	Deck with Greensock
+# MDX	Deck with Greensock Animation
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/41536d1d-d206-4630-ba26-142cbbec37e9/deploy-status)](https://app.netlify.com/sites/mdx-deck-greensock-demo/deploys)
 
